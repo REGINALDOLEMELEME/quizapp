@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Interativo</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
+
+<div class="w-full max-w-2xl bg-white shadow-lg rounded-lg overflow-hidden">
+  <div id="start" class="p-6">
+    <h2 class="text-2xl font-bold mb-4 text-center">Escolha um tema</h2>
+    <select id="tema" class="w-full p-3 border rounded mb-6">
+      <option value="Todas">Todas</option>
+      <option value="Didática">Didática</option>
+      <option value="TIC">TIC</option>
+      <option value="Legislação">Legislação</option>
+    </select>
+    <button id="iniciar" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded">Iniciar Quiz</button>
+  </div>
+
+  <div id="quiz" class="p-6 hidden">
+    <h2 id="pergunta" class="text-xl font-semibold mb-4"></h2>
+    <div id="respostas" class="space-y-3"></div>
+    <div id="feedback" class="mt-6 p-4 rounded hidden text-center font-medium"></div>
+  </div>
+
+  <div id="resultado" class="p-6 hidden text-center">
+    <h2 class="text-2xl font-bold mb-4">Resultado</h2>
+    <p id="acertos" class="mb-6 text-lg"></p>
+    <button id="reiniciar" class="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded">Jogar Novamente</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

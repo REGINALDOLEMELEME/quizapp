@@ -1,0 +1,13 @@
+/* style.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button:hover {
+    transition: background-color 0.3s ease;
+}
+
+.hidden {
+    display: none;
+}
